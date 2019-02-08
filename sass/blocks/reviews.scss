@@ -1,0 +1,190 @@
+.reviews {
+  width: 320px;
+  margin: 0 auto;
+  padding: 23px 30px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  background: url("../img/product-of-the-week__bg-zigzag--mobile.png") repeat-x 0 100%;
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.reviews__write {
+  margin-bottom: 51px;
+  width: 260px;
+  height: 52px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  order: 1;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  color: #444444;
+  background-color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
+}
+
+.reviews__description {
+  margin: 0;
+  margin-bottom: 27px;
+  padding-right: 10px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.reviews__author-wrapper {
+  margin-bottom: 29px;
+}
+
+.reviews__author {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.reviews__nickname {
+  margin: 0;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__button-wrapper {
+  margin-bottom: 38px;
+  display: flex;
+}
+
+.reviews__back {
+  width: 130px;
+  height: 52px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ececec;
+  border-right: none;
+  background-color: #ffffff;
+
+  &:hover .reviews__back-arrow {
+    fill: #666666;
+  }
+
+  &:active .reviews__back-arrow {
+    fill: #b2b2b2;
+  }
+}
+
+.reviews__forward {
+  width: 130px;
+  height: 52px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+
+  &:hover .reviews__forward-arrow {
+    fill: #666666;
+  }
+
+  &:active .reviews__forward-arrow {
+    fill: #b2b2b2;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    width: 768px;
+    padding: 77px 50px 0;
+    justify-content: space-between;
+    background: url("../img/product-of-the-week__bg-zigzag--tablet.png") repeat-x 0 100%,
+                url("../img/reviews__bg--tablet.jpg") no-repeat 0 0;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__write {
+    width: 175px;
+    margin-bottom: 47px;
+    order: 0;
+  }
+
+  .reviews__description {
+    margin-bottom: 61px;
+    font-size: 17px;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+  }
+
+  .reviews__button-wrapper {
+    margin: 0;
+    margin-bottom: 132px;
+    padding: 0;
+    padding-right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .reviews__back,
+  .reviews__forward {
+    width: 68px;
+    margin: 0;
+    border: none;
+  }
+
+  .reviews__back {
+    margin-right: 19px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .reviews {
+    width: 1250px;
+    padding: 71px 100px 0 275px;
+    background: url("../img/product-of-the-week__bg-zigzag--desktop.png") repeat-x 0 100%,
+                url("../img/reviews__bg--tablet.jpg") no-repeat 100px 0;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__write {
+    margin-top: 8px;
+    margin-bottom: 45px;
+  }
+
+  .reviews__description {
+    margin-bottom: 40px;
+  }
+
+  .reviews__button-wrapper {
+    margin-bottom: 189px;
+  }
+}

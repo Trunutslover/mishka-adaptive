@@ -1,0 +1,124 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+}
+
+.page-footer__items {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.page-footer__item {
+  width: 260px;
+  padding: 25px 0 21px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.page-footer__item--logo {
+  display: none;
+}
+
+.page-footer__link {
+  &:hover .page-footer__social-icon,
+  &:hover .page-footer__html-academy-icon,
+  &[href]:hover .page-footer__logo {
+    fill: #46c1ae;
+  }
+
+  &:active .page-footer__social-icon,
+  &:active .page-footer__html-academy-icon,
+  &[href]:active .page-footer__logo {
+    fill: #bde3dd;
+  }
+}
+
+.page-footer__social {
+  margin: 0;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.page-footer__html-academy-icon {
+  padding-left: 30px;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 768px;
+  }
+
+  .page-footer__items {
+    width: 768px;
+    justify-content: space-between;
+  }
+
+  .page-footer__item {
+    width: 250px;
+    padding: 57px 0 50px;
+
+    &:first-child {
+      padding-left: 50px;
+      text-align: left;
+    }
+    
+    &:last-child {
+      padding-right: 50px;
+      text-align: right;
+    }
+  }
+
+  .page-footer__item--logo {
+    display: initial;
+  }
+
+  .page-footer__social {
+    padding: 0 54px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .page-footer {
+    width: 1250px;
+  }
+
+  .page-footer__items {
+    width: 1250px;
+  }
+
+  .page-footer__item {
+    width: 300px;
+
+    &:first-child {
+      padding-left: 100px;
+    }
+
+    &:last-child {
+      padding-right: 100px;
+    }
+  }
+
+  .page-footer__social {
+    padding: 0 79px;
+  }
+}

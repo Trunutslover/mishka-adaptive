@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Open Sans";
+  src:
+          url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+          url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+          url("../fonts/opensans-bold-webfont.woff2") format("woff2"),
+          url("../fonts/opensans-bold-webfont.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+@import "blocks/main-nav.scss";
+@import "blocks/heading.scss";
+@import "blocks/product-of-the-week.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/inner-heading.scss";
+@import "blocks/catalogue.scss";
+@import "blocks/production-process.scss";
