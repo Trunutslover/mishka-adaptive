@@ -1,0 +1,44 @@
+.order-main {
+  width: 320px;
+  margin: 0 auto;
+  padding: 11px 30px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.order-main__title {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .order-main {
+    width: 768px;
+    margin-top: -12px;
+    padding: 84px 0 11px;
+    background: url("../img/product-of-the-week__bg-zigzag-top--tablet.png") repeat-x;
+  }
+
+  .order-main__title {
+    margin: 0;
+    padding: 0 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .order-main {
+    width: 1250px;
+    margin-top: -16px;
+    padding: 138px 0 15px;
+    background: url("../img/product-of-the-week__bg-zigzag-top--desktop.png") repeat-x;
+  }
+
+  .order-main__title {
+    margin-bottom: 7px;
+    padding: 0 275px;
+  }
+}
