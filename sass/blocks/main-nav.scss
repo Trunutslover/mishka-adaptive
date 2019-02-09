@@ -51,8 +51,13 @@
   }
 }
 
+.main-nav__main-menu-item--closed {
+  display: none;
+}
+
 .main-nav__link--logo {
   padding-left: 0;
+  display: block;
 
   &[href]:hover .main-nav__logo .text-mobile,
   &[href]:hover .main-nav__logo .outline {
@@ -79,6 +84,7 @@
   right: 27px;
   border: none;
   background: none;
+  transition: all 0.2s;
 
   &::before,
   &::after {
@@ -90,6 +96,7 @@
     top: 8px;
     left: 0;
     background-color: #000000;
+    transition: all 0.2s;
   }
 
   &::before {
@@ -118,6 +125,41 @@
   &:focus::before,
   &:focus::after {
     background-color: #666666;
+  }
+}
+
+.main-nav__button--menu-open {
+  transition: all 0.2s;
+
+  &::before {
+    transform: rotate(0deg);
+    -webkit-box-shadow: 0 -6px 0 0 #000000;
+    -moz-box-shadow: 0 -6px 0 0 #000000;
+    box-shadow: 0 -6px 0 0 #000000;
+    transition: all 0.2s;
+  }
+
+  &::after {
+    transform: rotate(0deg) translateY(6px);
+    transition: all 0.2s;
+  }
+
+  &:hover::before {
+    -webkit-box-shadow: 0 -6px 0 0 #666666;
+    -moz-box-shadow:  0 -6px 0 0 #666666;
+    box-shadow:  0 -6px 0 0 #666666;
+  }
+
+  &:active::before {
+    -webkit-box-shadow: 0 -6px 0 0 #b2b2b2;
+    -moz-box-shadow:  0 -6px 0 0 #b2b2b2;
+    box-shadow:  0 -6px 0 0 #b2b2b2;
+  }
+
+  &:focus::before {
+    -webkit-box-shadow: 0 -6px 0 0 #666666;
+    -moz-box-shadow:  0 -6px 0 0 #666666;
+    box-shadow:  0 -6px 0 0 #666666;
   }
 }
 
